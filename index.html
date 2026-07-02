@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OneBill CPQ — Diagnostic Imaging Sample Product Model (EasyQ2C)</title>
+  <style>
+    :root {
+      --bg: #f5f5f5; --surface: #fff; --text: #333; --muted: #666;
+      --accent: #E4002B; --accent-dark: #c40024; --nav-dark: #1a1a1a; --border: #e0e0e0;
+      --ct: #E4002B; --mri: #8b1538; --xr: #2d5a27;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: "Helvetica Neue", Arial, "Segoe UI", system-ui, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+    .hero { background: var(--nav-dark); color: #fff; padding: 3rem 1.5rem 2.5rem; }
+    .hero-inner { max-width: 960px; margin: 0 auto; }
+    .eyebrow { text-transform: uppercase; letter-spacing: .14em; font-size: .72rem; font-weight: 700; color: var(--accent); margin: 0 0 .6rem; }
+    .hero h1 { margin: 0 0 .6rem; font-size: 1.9rem; font-weight: 600; }
+    .hero p { margin: 0; color: #d8d8d8; max-width: 720px; font-size: 1rem; }
+    .hero .meta { margin-top: 1.4rem; display: flex; flex-wrap: wrap; gap: .5rem; }
+    .hero .meta span { background: #2d2d2d; border-left: 3px solid var(--accent); padding: .4rem .7rem; font-size: .78rem; border-radius: 0 4px 4px 0; }
+    main { max-width: 960px; margin: 0 auto; padding: 2rem 1.5rem 3rem; }
+    .lead { font-size: 1rem; color: var(--text); margin: 0 0 1.75rem; }
+    h2.section { font-size: 1.15rem; margin: 2rem 0 .35rem; padding-bottom: .4rem; border-bottom: 2px solid var(--accent); }
+    .section-note { color: var(--muted); font-size: .88rem; margin: 0 0 1rem; }
+    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1rem; }
+    .card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 1.15rem 1.25rem; display: flex; flex-direction: column; }
+    .card h3 { margin: 0 0 .4rem; font-size: 1.02rem; }
+    .card .tag { display: inline-block; font-size: .66rem; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; color: #fff; background: var(--accent); border-radius: 3px; padding: .12rem .45rem; margin-bottom: .55rem; align-self: flex-start; }
+    .card p { margin: 0 0 1rem; font-size: .88rem; color: var(--muted); flex: 1; }
+    .card a.btn { text-decoration: none; background: var(--accent); color: #fff; font-weight: 600; font-size: .85rem; padding: .55rem .9rem; border-radius: 5px; text-align: center; }
+    .card a.btn:hover { background: var(--accent-dark); }
+    .card a.btn.secondary { background: #333; }
+    .card a.btn.secondary:hover { background: #000; }
+    .btn-row { display: flex; gap: .5rem; flex-wrap: wrap; }
+    .btn-row a.btn { flex: 1; }
+    footer { max-width: 960px; margin: 0 auto; padding: 1.5rem; color: var(--muted); font-size: .78rem; border-top: 1px solid var(--border); }
+    .pill { display:inline-block; font-size:.7rem; font-weight:700; padding:.1rem .5rem; border-radius:20px; background:#fde8ec; color:var(--accent-dark); margin-left:.4rem; }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <p class="eyebrow">EasyQ2C · Product Management → OneBill CPQ Engineering</p>
+      <h1>Diagnostic Imaging — CPQ Sample Product Model</h1>
+      <p>Configuration package for OneBill CPQ: the commercial product model, guided selling journey, pricing logic, bundling &amp; approval rules, and integration boundaries for a capital diagnostic-imaging portfolio (CT, MRI, X-Ray). Every document below is self-contained — catalog CSVs and images are embedded, so it opens with no external files.</p>
+      <div class="meta">
+        <span>Product master: Stripe RFA → OneBill CPQ</span>
+        <span>CRM: Salesforce-connected</span>
+        <span>Modalities: CT · MRI · X-Ray</span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <p class="lead">Shared with the OneBill technical team to drive CPQ configuration. Start with the <strong>Product Requirements Brief</strong>; use the <strong>Product Catalog</strong> to browse SKUs, options, and integration files.</p>
+
+    <h2 class="section">Primary package <span class="pill">EQ2C-DI-CATALOG-001</span></h2>
+    <p class="section-note">The current requirements brief and interactive catalog.</p>
+    <div class="cards">
+      <div class="card">
+        <span class="tag">Requirements Brief</span>
+        <h3>CPQ Product Requirements Brief</h3>
+        <p>Executive summary, architecture &amp; ownership, catalog hierarchy, SKU master, guided selling journey, pricing, bundling, approval governance, and demo scenarios.</p>
+        <a class="btn" href="v2/requirements-brief.html">Open requirements brief</a>
+      </div>
+      <div class="card">
+        <span class="tag">Interactive Catalog</span>
+        <h3>Diagnostic Imaging Product Catalog</h3>
+        <p>Browse the full Helix CT, Meridian MRI, and Apex X-Ray lines plus attachable options and services. Includes downloadable Stripe/Salesforce integration CSVs.</p>
+        <a class="btn" href="v2/product-catalog.html">Open product catalog</a>
+      </div>
+    </div>
+
+    <h2 class="section">Conga demo-aligned variant <span class="pill">EQ2C-DI-CATALOG-003</span></h2>
+    <p class="section-note">Alternate model aligned to the recorded demo walkthrough (express-quote hero path).</p>
+    <div class="cards">
+      <div class="card">
+        <span class="tag">Requirements Brief</span>
+        <h3>Requirements Brief — Demo-aligned (v3)</h3>
+        <p>Same structure, tuned to the recorded demo: express quote flow, ramps/CPI pricing, and an expanded CPQ solutions reference.</p>
+        <a class="btn secondary" href="v3/requirements-brief.html">Open v3 requirements brief</a>
+      </div>
+      <div class="card">
+        <span class="tag">Interactive Catalog</span>
+        <h3>Product Catalog — Demo-aligned (v3)</h3>
+        <p>Catalog variant matching the demo product model and options.</p>
+        <a class="btn secondary" href="v3/product-catalog.html">Open v3 product catalog</a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    EasyQ2C · OneBill CPQ Diagnostic Imaging sample product model. Product/vendor names (Helix, Meridian, Apex, EasyQ2C) are illustrative and used for demonstration only.
+  </footer>
+</body>
+</html>
