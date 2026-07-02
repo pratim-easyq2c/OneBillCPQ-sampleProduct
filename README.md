@@ -20,6 +20,6 @@ Each HTML file is fully self-contained — catalog CSVs and images are embedded,
 
 ## Deployment
 
-Pushing to `main` triggers `.github/workflows/deploy-pages.yml`, which enables (on first run) and deploys GitHub Pages automatically.
+GitHub Pages is configured to **deploy from a branch** (`main`, root folder). Any push to `main` republishes the site automatically within a minute or two.
 
 > Product and vendor names (Helix, Meridian, Apex, EasyQ2C) are illustrative and used for demonstration only.
