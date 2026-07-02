@@ -1,25 +1,21 @@
-# OneBill CPQ — Diagnostic Imaging Sample Product Model
+# OneBill CPQ — Diagnostic Imaging Requirements Brief
 
-Shareable site for the OneBill technical team. It hosts the CPQ product-requirements briefs and interactive product catalogs for a capital diagnostic-imaging portfolio (CT, MRI, X-Ray), authored by EasyQ2C Product Management.
+Shareable site for the OneBill technical team. It hosts a single page: the CPQ Product Requirements Brief for a capital diagnostic-imaging portfolio (CT, MRI, X-Ray), authored by EasyQ2C Product Management.
 
 ## Live site
 
-Once GitHub Pages finishes its first deploy: **https://pratim-easyq2c.github.io/OneBillCPQ-sampleProduct/**
+**https://pratim-easyq2c.github.io/OneBillCPQ-sampleProduct/**
 
 ## Contents
 
 | Path | Description |
 |------|-------------|
-| `index.html` | Landing page linking to every document |
-| `v2/requirements-brief.html` | CPQ Product Requirements Brief (EQ2C-DI-CATALOG-001) |
-| `v2/product-catalog.html` | Interactive product catalog (EQ2C-DI-CATALOG-001) |
-| `v3/requirements-brief.html` | Requirements brief, Conga demo-aligned (EQ2C-DI-CATALOG-003) |
-| `v3/product-catalog.html` | Product catalog, Conga demo-aligned (EQ2C-DI-CATALOG-003) |
+| `index.html` | CPQ Product Requirements Brief (EQ2C-DI-CATALOG-001) |
 
-Each HTML file is fully self-contained — catalog CSVs and images are embedded, and the CSVs can be downloaded from within the catalog pages. No build step or external assets are required.
+The page is fully self-contained — all catalog data and images are embedded. No build step or external assets are required.
 
 ## Deployment
 
-GitHub Pages is configured to **deploy from a branch** (`main`, root folder). Any push to `main` republishes the site automatically within a minute or two.
+GitHub Pages deploys from `main` (root folder) via the workflow in `.github/workflows/`. Any push to `main` republishes the site automatically within a minute or two.
 
 > Product and vendor names (Helix, Meridian, Apex, EasyQ2C) are illustrative and used for demonstration only.
